@@ -12,7 +12,7 @@
 2. I need to redesign the database schema 
   * It was initially designed in a way where new tables–instead of new fields on an already existing table–were added at as a per need basis. Eventually the database grew to be a web of unnecessary tables that could be condensed.(See below)
 
-![Database_Rel.png](https://s17.postimg.org/9rj6ryr33/Database_Rel.png)](https://postimg.org/image/s73npd57f/)
+[![Database_Rel.png](https://s18.postimg.org/ahgoiynx5/Database_Rel.png)](https://postimg.org/image/8cwbhvmad/)
 
 3. Dabbling into a new tech: ActiveAdmin
   * I knew I didn't have to reinvent the wheel because I was sure there were gems out there that could give me a good foundation to work from. After deliberating between a few, I'm going with ActiveAdmin–for now at least. 
