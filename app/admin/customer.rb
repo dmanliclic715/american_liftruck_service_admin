@@ -13,6 +13,5 @@ ActiveAdmin.register Customer do
 #   permitted
 # end
 
-filter :name
 
 end

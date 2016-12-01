@@ -1,7 +1,8 @@
-class CreateCustomers < ActiveRecord::Migration[5.0]
+class CreateVendors < ActiveRecord::Migration[5.0]
   def change
-    create_table :customers do |t|
-      t.string :name, null: false
+    create_table :vendors do |t|
+      t.string :als_account_number
+      t.string :vendor_name, null: false
       t.string :billing_address, null: false
       t.string :billing_city, null: false
       t.string :billing_state, null: false
@@ -18,7 +19,7 @@ class CreateCustomers < ActiveRecord::Migration[5.0]
       t.integer :per_hour_rate
       t.integer :tax_rate
       t.integer :terms
-      t.timestamps null: false
+      t.timestamps
     end
   end
 end
