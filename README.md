@@ -10,11 +10,10 @@
   * I discovered that data from FMP can be exported into CSV, so I'm going to use that to my advantage and hopefully try to import that data into the postgres DB that way. 
 
 2. I need to redesign the database schema 
-  * It was initially designed in a way where new tables–instead of new fields on an already existing table–were added at as a per need basis. Eventually the database grew to be a web of unnecessary tables that could be condensed.(See below)
+  * It was initially designed in a way where new tables–instead of new fields on an already existing table–were added at a per need basis. Eventually the database grew to be a web of unnecessary tables that could be condensed. I'm currently working on condensing the tables of the database to be more manageable.(See below)
 
 [![Database_Rel.png](https://s18.postimg.org/ahgoiynx5/Database_Rel.png)](https://postimg.org/image/8cwbhvmad/)
 
 3. Dabbling into a new tech: ActiveAdmin
-  * I knew I didn't have to reinvent the wheel because I was sure there were gems out there that could give me a good foundation to work from. After deliberating between a few, I'm going with ActiveAdmin–for now at least. 
-
+  * I knew it was not necessary to reinvent the wheel because I was sure there were gems out there that could give me a good foundation to develop the application. After deliberating between a few gems(ActiveAdmin,Rails Admin, and Administrate), I'll be utlizing ActiveAdmin. I went with this gem because it has much of the functionality required by the application already built in and has been much more supported by the community. What I don't like about this gem in contrast to others is the necessity to learn the DSL(domain specific language) utilized to configure the application.
 
