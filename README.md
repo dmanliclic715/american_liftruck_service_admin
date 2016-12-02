@@ -1,11 +1,9 @@
 
 # American Liftruck Service: Admin Application
 > Ruby Version: ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-darwin14]
->Rails Version: Rails 5.0.0.1
-## The Project: My First Client
-> Ruby Version: ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-darwin14]
 Rails Version: Rails 5.0.0.1
 
+## The Project: My First Client
 > Since attaining my newfound dev chops, I was recently asked by my gf's father to overhaul his current admin application. He created his current application with File Maker Pro(FMP) in the early 2000's. He's entrusted me to maintain the integrity of his program's current functionality, all while parsing out inefficiencies. There are definitely a lot of challenges that I'll need address throughout this overhaul, but I'm looking forward to taking them on!
 
 ----
