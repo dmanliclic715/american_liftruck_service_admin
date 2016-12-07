@@ -12,7 +12,7 @@ Rails Version: Rails 5.0.0.1
   * I discovered that data from FMP can be exported into CSV, so I'm going to use that to my advantage and hopefully try to import that data into the postgres DB that way. 
 
 2. I need to redesign the database schema 
-  * It was initially designed in a way where new tables–instead of new fields on an already existing table–were added at a per need basis. Eventually the database grew to be a web of unnecessary tables that could be condensed. I'm currently working on condensing the tables of the database to be more manageable.(See below)
+  * It was initially designed in a way where new tables–instead of new fields on an already existing table–were added at a per need basis. Eventually the database grew to be a web of unnecessary tables that could be condensed. I'm currently working on condensing the tables of the database to be more manageable.(See original database schema below)
 
 [![Database_Rel.png](https://s18.postimg.org/ahgoiynx5/Database_Rel.png)](https://postimg.org/image/8cwbhvmad/)
 
