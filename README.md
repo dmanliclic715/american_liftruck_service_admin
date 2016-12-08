@@ -4,7 +4,7 @@
 Rails Version: Rails 5.0.0.1
 
 ## The Project: My First Client
-> Since attaining my newfound dev chops, I was recently asked by my gf's father to overhaul his current admin application. He created his current application with File Maker Pro(FMP) in the early 2000's. He's entrusted me to maintain the integrity of his program's current functionality, all while parsing out inefficiencies. There are definitely a lot of challenges that I'll need address throughout this overhaul, but I'm looking forward to taking them on!
+> Since attaining my newfound dev chops, I've recently obtained a client that wants me to overhaul his current administration application. He created his current application with File Maker Pro(FMP) in the early 2000's. He's entrusted me to maintain the integrity of his program's current functionality, all while parsing out inefficiencies. There are definitely a lot of challenges that I'll need address throughout this overhaul, but I'm looking forward to taking them on!
 
 ----
 ## Challenges 
