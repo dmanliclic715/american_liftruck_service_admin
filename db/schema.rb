@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161201044230) do
+ActiveRecord::Schema.define(version: 20161211015828) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,16 +47,50 @@ ActiveRecord::Schema.define(version: 20161201044230) do
   end
 
   create_table "customers", force: :cascade do |t|
-    t.string   "name",             null: false
-    t.string   "billing_address",  null: false
-    t.string   "billing_city",     null: false
-    t.string   "billing_state",    null: false
-    t.string   "billing_zip",      null: false
-    t.string   "shipping_address", null: false
-    t.string   "shipping_city",    null: false
-    t.string   "shipping_state",   null: false
-    t.string   "shipping_zip",     null: false
-    t.string   "po_number",        null: false
+    t.string   "name"
+    t.string   "billing_address"
+    t.string   "billing_city"
+    t.string   "billing_state"
+    t.string   "billing_zip"
+    t.string   "shipping_address"
+    t.string   "shipping_city"
+    t.string   "shipping_state"
+    t.string   "shipping_zip"
+    t.string   "po_number"
+    t.text     "notes"
+    t.string   "contact_person"
+    t.string   "sales_person"
+    t.integer  "mark_up"
+    t.integer  "per_hour_rate"
+    t.float    "tax_rate"
+    t.integer  "terms"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  create_table "phone_numbers", force: :cascade do |t|
+    t.string   "number",         null: false
+    t.text     "notes"
+    t.string   "type_of_number"
+    t.integer  "phoneable_id"
+    t.string   "phoneable_type"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.index ["phoneable_id", "phoneable_type"], name: "index_phone_numbers_on_phoneable_id_and_phoneable_type", using: :btree
+  end
+
+  create_table "vendors", force: :cascade do |t|
+    t.string   "als_account_number"
+    t.string   "vendor_name",        null: false
+    t.string   "billing_address",    null: false
+    t.string   "billing_city",       null: false
+    t.string   "billing_state",      null: false
+    t.string   "billing_zip",        null: false
+    t.string   "shipping_address",   null: false
+    t.string   "shipping_city",      null: false
+    t.string   "shipping_state",     null: false
+    t.string   "shipping_zip",       null: false
+    t.string   "po_number"
     t.text     "notes"
     t.string   "contact_person"
     t.string   "sales_person"
@@ -64,6 +98,16 @@ ActiveRecord::Schema.define(version: 20161201044230) do
     t.integer  "per_hour_rate"
     t.integer  "tax_rate"
     t.integer  "terms"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
+
+  create_table "web_contacts", force: :cascade do |t|
+    t.text     "notes"
+    t.string   "type_of_web"
+    t.string   "web"
+    t.integer  "contactable_id",   null: false
+    t.string   "contactable_type", null: false
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
   end
