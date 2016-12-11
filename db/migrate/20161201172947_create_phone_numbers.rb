@@ -3,7 +3,7 @@ class CreatePhoneNumbers < ActiveRecord::Migration[5.0]
     create_table :phone_numbers do |t|
       t.string :number, null: false
       t.text :notes
-      t.string :type
+      t.string :type_of_number
       t.integer :phoneable_id
       t.string :phoneable_type
       t.timestamps null: false
